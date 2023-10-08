@@ -31,7 +31,7 @@ classDiagram
     }
 
     Pessoa "1" --> "1" Conta  
-    Pessoa "1" --> 1..*Cartao  
-    Pessoa  "1" --> 1..*  Recurso  
-    Pessoa "1" --> 0..* Novidade  
+    Pessoa "1" --> Cartao : 1..* 
+    Pessoa  "1" -->  Recurso : 1..*   
+    Pessoa "1" --> Novidade  :  0..* 
 ```
