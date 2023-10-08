@@ -30,7 +30,7 @@ classDiagram
         +descricao: string
     }
 
-    Pessoa --> Conta : possui
+    Pessoa "1" --> "1" Conta : possui
     Pessoa --> Cartao : possui
     Pessoa --> Recurso : possui 0..*
     Pessoa --> Novidade : possui 0..*
