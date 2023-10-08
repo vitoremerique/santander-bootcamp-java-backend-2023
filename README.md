@@ -31,7 +31,7 @@ classDiagram
     }
 
     Pessoa "1" --> "1" Conta : possui
-    Pessoa --> Cartao : possui
-    Pessoa --> Recurso : possui 0..*
-    Pessoa --> Novidade : possui 0..*
+    Pessoa "1" --> Cartao : possui 1..*
+    Pessoa  "1" -->  Recurso : possui 0..*
+    Pessoa "1" --> Novidade : possui 0..*
 ```
