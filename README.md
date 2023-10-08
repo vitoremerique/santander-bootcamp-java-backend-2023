@@ -6,6 +6,10 @@ Java Restful criada para finalizar o bootcamp da Santander Bootcamp Java Backend
 classDiagram
     class Pessoa {
         +nome: string
+        +Conta: conta
+        +Cartao: cartao
+        +Recurso[]: recurso
+        +Novidade[]: novidade 
     }
 
     class Conta {
