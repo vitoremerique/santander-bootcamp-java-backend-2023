@@ -1,7 +1,6 @@
 # santander-bootcamp-java-backend-2023
 Java Restful criada para finalizar o bootcamp da Santander Bootcamp Java Backend 2023
 
-
 ## Diagrama de classes
 ```mermaid
 classDiagram
