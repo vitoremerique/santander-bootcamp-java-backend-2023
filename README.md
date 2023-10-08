@@ -5,11 +5,11 @@ Java Restful criada para finalizar o bootcamp da Santander Bootcamp Java Backend
 ```mermaid
 classDiagram
     class Pessoa {
-        +nome: string
-        +Conta: conta
-        +Cartao: cartao
-        +Recurso[]: recurso
-        +Novidade[]: novidade 
+        -nome: string
+        -Conta: conta
+        -Cartao: cartao
+        -Recurso[]: recurso
+        -Novidade[]: novidade 
     }
 
     class Conta {
