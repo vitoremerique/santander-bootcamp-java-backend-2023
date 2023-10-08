@@ -30,8 +30,8 @@ classDiagram
         +descricao: string
     }
 
-    Pessoa "1" --> "1" Conta : 
-    Pessoa "1" --> 1..*Cartao : 
-    Pessoa  "1" --> 1..*  Recurso : 
-    Pessoa "1" --> 0..* Novidade : 
+    Pessoa "1" --> "1" Conta  
+    Pessoa "1" --> 1..*Cartao  
+    Pessoa  "1" --> 1..*  Recurso  
+    Pessoa "1" --> 0..* Novidade  
 ```
