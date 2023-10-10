@@ -26,6 +26,7 @@ dependencies {
 }
 
 tasks.jar{
+	enabled=false
 	manifest {
 		attributes["Main-Class"] = "me.dio.Application"
 
