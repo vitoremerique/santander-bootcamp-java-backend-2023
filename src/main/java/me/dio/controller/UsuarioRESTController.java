@@ -1,5 +1,6 @@
 package me.dio.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import me.dio.model.Usuario;
 import me.dio.service.UsuarioService;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ public class UsuarioRESTController {
         this.userService = UserService;
     }
 
+    @Operation(summary = "Cria usuário no banco de dados com sua determinadas informações")
     @PostMapping
     public ResponseEntity<Usuario> createUsuario(@RequestBody Usuario user){
         var usuarioCriado = userService.create(user);
@@ -29,10 +31,13 @@ public class UsuarioRESTController {
     }
 
     @GetMapping("/usuarios/{id}")
+    @Operation(summary = "Busca usuário por id")
     public ResponseEntity<Usuario> findbyid(@PathVariable Long id){
         var Usuario = userService.findbyId(id);
         return ResponseEntity.ok(Usuario);
     }
+
+    @Operation(summary = "Retorna todos os usuários do banco")
     @GetMapping
     public ResponseEntity<List<Usuario>> getAll(){
         var Usuarios = userService.getAll();
