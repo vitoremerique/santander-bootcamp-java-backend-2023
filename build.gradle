@@ -27,9 +27,12 @@ dependencies {
 
 tasks.jar{
 	manifest {
-		attributes["Main-Classes"] = "me.dio.Application"
+		attributes["Main-Class"] = "me.dio.Application"
 	}
 }
+
+
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
