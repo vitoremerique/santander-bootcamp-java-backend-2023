@@ -9,7 +9,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://santander-backend-2023-production.up.railway.app") // Substitua pelo seu domínio
+                .allowedOrigins("*") // Substitua pelo seu domínio
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
 }
